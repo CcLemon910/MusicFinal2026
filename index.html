@@ -302,7 +302,7 @@ const MONTHS = [
 /* ---- 檔案路徑（要搬資料夾就改這裡） ---- */
 const PATHS = {
   sheet: n => `img/${n}.png`,      // 樂譜在 img 資料夾
-  music: n => `music/${n}.mp3`,    // 音檔在 music 資料夾
+  music: n => `${n}.mp3`,          // 音檔在最外層（跟 index.html 同一層）
   photo: n => `${n}pic.png`,       // 照片在根目錄；若也放進資料夾，例如 img，改成 `img/${n}pic.png`
 };
 
