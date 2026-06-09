@@ -363,12 +363,9 @@ const gameFrame  = document.getElementById('gameFrame');
 
 function openMonth(m){
   if (m.isGame){
-    // 四月 → 開 Unity 遊戲
-    bgVideo.pause();
-    gameFrame.src = 'https://itch.io/embed-upload/17855403?color=333333';
-    gameModal.classList.add('show');
-    return;
-  }
+  window.open('https://itch.io/embed-upload/17855403?color=333333', '_blank');
+  return;
+}
   // 其他月份 → 顯示照片 + 播放曲目
   bgVideo.pause();
   document.getElementById('modalImg').src   = PATHS.photo(m.num);
